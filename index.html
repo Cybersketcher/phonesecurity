@@ -26,13 +26,7 @@
         font-size: 40px;
         font-weight: 700;
         letter-spacing: 1px;
-        animation: fadeDown 1.2s ease-in-out;
         text-shadow: 0 3px 6px rgba(0,0,0,0.3);
-    }
-
-    @keyframes fadeDown {
-        from {opacity: 0; transform: translateY(-40px);}
-        to {opacity: 1; transform: translateY(0);}
     }
 
     /* Main container */
@@ -42,12 +36,6 @@
         padding: 40px;
         gap: 20px;
         flex-wrap: wrap;
-        animation: fadeUp 1.2s ease-in-out;
-    }
-
-    @keyframes fadeUp {
-        from {opacity: 0; transform: translateY(40px);}
-        to {opacity: 1; transform: translateY(0);}
     }
 
     /* Card Sections */
@@ -58,32 +46,8 @@
         padding: 25px;
         border-radius: 15px;
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-        transition: 0.3s ease-in-out;
         border-left: 6px solid #0a6ef3;
         position: relative;
-        overflow: hidden;
-    }
-
-    .card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 12px 26px rgba(0,0,0,0.2);
-    }
-
-    /* Decorative Glow Animation */
-    .card:hover::before {
-        content: "";
-        position: absolute;
-        width: 200%;
-        height: 200%;
-        top: -50%;
-        left: -50%;
-        background: linear-gradient(135deg, rgba(10,110,243,0.2), transparent);
-        animation: rotateGlow 3s linear infinite;
-    }
-
-    @keyframes rotateGlow {
-        from {transform: rotate(0deg);}
-        to {transform: rotate(360deg);}
     }
 
     h2 {
@@ -119,12 +83,6 @@
         border-radius: 15px;
         overflow: hidden;
         box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-        animation: zoomIn 1.4s ease-in-out;
-    }
-
-    @keyframes zoomIn {
-        from {opacity: 0; transform: scale(0.8);}
-        to {opacity: 1; transform: scale(1);}
     }
 
     .image-box img {
@@ -181,7 +139,7 @@
             <img src="two.png" alt="Cyber Security">
         </div>
 
-        <h2><i class="fa-solid fa-user-shield"></i> How to Stay Safe</h2>
+        <h2><i class="fa-solid fa-user-shield"></i> How to Stay Safe & Report</h2>
         <ul>
             <li><i class="fa-solid fa-ban"></i> Never share OTP, PIN, passwords.</li>
             <li><i class="fa-solid fa-user-lock"></i> Enable 2-step verification on all apps.</li>
@@ -192,8 +150,8 @@
             <li><i class="fa-solid fa-eye-slash"></i> Disable screen sharing with strangers.</li>
             <li><i class="fa-solid fa-bell"></i> Report suspicious numbers immediately.</li>
 
-            <!-- ⭐ Added Cyber Safety Helpline & Portal -->
-            <li><i class="fa-solid fa-phone"></i> Report cyber fraud immediately at <b>1930</b>.</li>
+            <!-- Added Helpline -->
+            <li><i class="fa-solid fa-phone"></i> Report cyber fraud at <b>1930</b>.</li>
             <li><i class="fa-solid fa-globe"></i> File complaints at 
                 <a href="https://www.cybercrime.gov.in" target="_blank"><b>cybercrime.gov.in</b></a>.
             </li>
